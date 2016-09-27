@@ -10,30 +10,34 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            //string y;
 
-            for (int i = 0; 1 < 100; i++)
+            //Console.WriteLine("Pick # 1 - 100 to play FizzBuzz");
 
-            if (i % 3 == 0 && i % 5 == 0)
+            //y = Console.ReadLine();
+
+            int newNum;
+            for (int i = 0; i < 100; i++)
             {
+                if (i % 3 == 0 && i % 5 == 0)
+                {
                     Console.WriteLine("FizzBuzz");
-            }
-
-            else if (i % 3 == 0)
-            {
-                Console.WriteLine("Fizz");
-            }
-
-            else if (i % 5 == 0)
-            {
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
                     Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
             }
-
 
             Console.ReadLine();
-
-
-
-
         }
     }
 }
